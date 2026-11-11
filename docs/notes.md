@@ -1,0 +1,1 @@
+# Ghi chú ngày 1
