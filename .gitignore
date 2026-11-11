@@ -1,0 +1,22 @@
+# 1. Thư viện phụ thuộc Node.js (không bao giờ đẩy lên Git vì dung lượng lớn và cài lại được bằng npm)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 2. BẢO MẬT: Chặn file chứa mật khẩu, token, private key của Node-RED
+flows_cred.json
+.config.runtime.json
+.config.users.json
+.sessions.json
+
+# 3. File backup tự động của Node-RED
+.flows.json.backup
+flows_*.json.backup
+
+# 4. File tạm của hệ điều hành Windows và môi trường phát triển
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
