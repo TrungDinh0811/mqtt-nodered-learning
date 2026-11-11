@@ -1,24 +1,12 @@
 [
     {
-        "id": "d2d8fa2e264ea956",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "3f3740345e5ab6cf",
+        "id": "node_inject_msg",
         "type": "inject",
-        "z": "d2d8fa2e264ea956",
-        "name": "",
+        "z": "tab_mqtt_demo",
+        "name": "Trigger Message",
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -26,31 +14,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Hello MQTT",
+        "payload": "Hello MQTT from Node-RED",
         "payloadType": "str",
-        "x": 490,
-        "y": 220,
+        "x": 160,
+        "y": 140,
         "wires": [
             [
-                "d3621499a7725d45"
+                "node_func_format"
             ]
         ]
-    },
-    {
-        "id": "d3621499a7725d45",
-        "type": "debug",
-        "z": "d2d8fa2e264ea956",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 220,
-        "wires": []
     }
 ]
